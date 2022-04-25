@@ -158,7 +158,7 @@
                         <p class="mb-4">J'ai le souhait de me former continuellement et j'ai bénéficié de plusieurs formations complémentaires à ma pratique en psychomotricité. Je participe régulièrement à des séminaires, conférences et colloques. Je suis membre de l'Association française des psychomotriciens libéraux ainsi que celle des psychomotriciens du Vaucluse.</p>
                         <div class="row g-4 align-items-center">
                             <div class="col-sm-6">
-                                <a class="btn btn-primary rounded-pill py-3 px-5" href="./pages/about.html">Quand consulter?</a>
+                                <a class="btn btn-primary rounded-pill py-3 px-5" href="./about.html">Quand consulter?</a>
                             </div>
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
@@ -190,7 +190,7 @@
         <!-- About End -->
 
         <!--MAP-->
-        <div class="container-fluid">
+        <div class="container-xxl">
             <div class="row">
                 <div class="text-center mx-auto mb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h2 class="mb-3">Où me trouver?</h2>
@@ -199,7 +199,7 @@
                     <div class="">
                         <img class="img-fluid w-100" src="./img/photos_client/MAP.png">
                     </div>
-                    <div class="container d-flex justify-content-center flex-column align-content-center">
+                    <div class="container d-flex justify-content-center flex-column align-items-center">
                         <h3 class="mb-4">Villa Medica</h3>
                         <h4 class="mb-4">16 BOULEVARD GAMBETTA</h4>
                         <h4 class="mb-4">13160 CHATEAURENARD</h4>
@@ -217,35 +217,35 @@
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4">Me contacter</h1>
-                                <form>
+                                <form onsubmit="sendEmail(); reset(); return false;">
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="name" placeholder="Gurdian Name">
+                                                <input type="text" class="form-control border-0" id="name" placeholder="Nom, prénom">
                                                 <label for="gname">Nom, Prénom</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="email" placeholder="Gurdian Email">
+                                                <input type="email" class="form-control border-0" id="email" placeholder="Email">
                                                 <label for="gmail">Email</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="childName" placeholder="Child Name">
+                                                <input type="text" class="form-control border-0" id="childName" placeholder="Prénom de l'enfant">
                                                 <label for="cname">Prénom de l'enfant</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="childge" placeholder="Child Age">
+                                                <input type="text" class="form-control border-0" id="childge" placeholder="Age de l'enfant">
                                                 <label for="cage">Age de l'enfant</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                                <textarea class="form-control border-0" placeholder="Ecrivez votre message ici" id="message" style="height: 100px"></textarea>
                                                 <label for="message">Message</label>
                                             </div>
                                         </div>
@@ -299,8 +299,8 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/contact.js"></script>
     <script src="js/main.js"></script>
 </body>
 
