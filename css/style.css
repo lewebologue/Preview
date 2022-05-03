@@ -501,3 +501,10 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+/** CUSTOM MODIFICATIONS **/
+.custom{
+    margin-bottom: 3rem;
+    height: 20rem;
+    width: 25rem;
+}
