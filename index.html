@@ -28,6 +28,15 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- EmailJS Init-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('TwLYgRBPXw8xH5uel');
+        })();
+    </script>
 </head>
 
 <body>
@@ -162,7 +171,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
+                                    <img class="rounded-circle flex-shrink-0" src="img/csm_picto-carte_ee82d5f391.jpg" alt="" style="width: 45px; height: 45px;">
                                     <div class="ms-3">
                                         <h6 class="text-primary mb-1">Charlotte Lumeau</h6>
                                         <small>Psychomotricienne</small>
@@ -217,7 +226,7 @@
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4">Me contacter</h1>
-                                <form onsubmit="sendEmail(); reset();">
+                                <form id="contact-form" onsubmit="sendEmail();">
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
