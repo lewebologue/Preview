@@ -28,9 +28,6 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- EmailJS Init-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -253,7 +250,7 @@
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <button class="btn btn-primary w-100 py-3" type="submit">Envoyer</button>
+                                            <button class="btn btn-primary w-100 py-3" type="submit" class="h-captcha" data-sitekey="2a1002a6-7d0b-454f-8fe2-9d65687c9699" data-callback="onSubmit">Envoyer</button>
                                         </div>
                                     </div>
                                 </form>
@@ -305,6 +302,12 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./js/contact.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- EmailJS Init-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--hCaptcha-->
+    <script src="https://js.hcaptcha.com/1/api.js?hl=fr" async defer></script>
 </body>
 
 </html>
