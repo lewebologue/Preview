@@ -31,12 +31,6 @@
 
     <!-- EmailJS Init-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('TwLYgRBPXw8xH5uel');
-        })();
-    </script>
 </head>
 
 <body>
@@ -230,31 +224,31 @@
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="name" placeholder="Nom, prénom">
+                                                <input type="text" class="form-control border-0" name="name" placeholder="Nom, prénom">
                                                 <label for="gname">Nom, Prénom</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="email" placeholder="Email">
+                                                <input type="email" class="form-control border-0" name="email" placeholder="Email">
                                                 <label for="gmail">Email</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="childName" placeholder="Prénom de l'enfant">
+                                                <input type="text" class="form-control border-0" name="childName" placeholder="Prénom de l'enfant">
                                                 <label for="cname">Prénom de l'enfant</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="childge" placeholder="Age de l'enfant">
+                                                <input type="text" class="form-control border-0" name="childAge" placeholder="Age de l'enfant" pattern="[0-9]{2}">
                                                 <label for="cage">Age de l'enfant</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Ecrivez votre message ici" id="message" style="height: 100px"></textarea>
+                                                <textarea class="form-control border-0" name="message" placeholder="Ecrivez votre message ici" style="height: 100px"></textarea>
                                                 <label for="message">Message</label>
                                             </div>
                                         </div>
