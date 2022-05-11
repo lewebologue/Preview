@@ -58,7 +58,7 @@
                     <a href="#" class="nav-item nav-link d-flex justify-content-end">Accueil</a>
                     <a href="./about.html" class="nav-item nav-link d-flex justify-content-end">Quand consulter?</a>
                     <a href="./parcours.html" class="nav-item nav-link d-flex justify-content-end">Mon parcours</a>
-                    <a href="#" class="nav-item nav-link d-flex justify-content-end">Où me trouver?</a>
+                    <a href="#map" class="nav-item nav-link d-flex justify-content-end">Où me trouver?</a>
                 </div>
             </div>
         </nav>
@@ -159,14 +159,14 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h1 class="mb-4">Qui suis-je?</h1>
                         <p>Diplômée de l'ISRP de Paris en 2014, je bénéficie d'une expérience institutionnelle auprès de différents publics ainsi que de plusieurs années d'exercice en cabinet libéral auprès d'enfants et de leurs parents.</p>
-                        <p class="mb-4">J'ai le souhait de me former continuellement et j'ai bénéficié de plusieurs formations complémentaires à ma pratique en psychomotricité. Je participe régulièrement à des séminaires, conférences et colloques. Je suis membre de l'Association française des psychomotriciens libéraux.</p>
+                        <p class="mb-4">J'ai le souhait de me former continuellement et j'ai bénéficié de plusieurs formations complémentaires à ma pratique en psychomotricité. Je participe régulièrement à des séminaires, conférences et colloques, et me tiens informée de l'évolution des bonnes pratique et de l'évolution de la Haute Autorité de Santé. Je suis membre de l'Association française des psychomotriciens libéraux.</p>
                         <div class="row g-4 align-items-center">
                             <div class="col-sm-6">
                                 <a class="btn btn-primary rounded-pill py-3 px-5" href="./about.html">Quand consulter?</a>
                             </div>
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle flex-shrink-0" src="img/csm_picto-carte_ee82d5f391.jpg" alt="Charlotte's portrait" style="width: 45px; height: 45px;">
+                                    <img class="rounded-circle flex-shrink-0" src="img/Logo.png" alt="Charlotte's portrait" style="width: 45px; height: 45px;">
                                     <div class="ms-3">
                                         <h6 class="text-primary mb-1">Charlotte Lumeau</h6>
                                         <small>Psychomotricienne</small>
@@ -194,7 +194,7 @@
         <!-- About End -->
 
         <!--MAP-->
-        <div class="container-xxl">
+        <div class="container-xxl" id="map">
             <div class="row">
                 <div class="text-center mx-auto mb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h2 class="mb-3">Où me trouver?</h2>
@@ -204,9 +204,9 @@
                         <img class="img-fluid w-100" src="./img/MAP.webp" alt="map">
                     </div>
                     <div class="container d-flex justify-content-center flex-column align-items-center">
-                        <h3 class="mb-4">Villa Medica</h3>
-                        <h4 class="mb-4">16 BOULEVARD GAMBETTA</h4>
-                        <h4 class="mb-4">13160 CHATEAURENARD</h4>
+                        <h2 class="mb-4 fs-1">Villa Medica</h2>
+                        <h5 class="mb-4 fs-3">16 BOULEVARD GAMBETTA</h5>
+                        <h5 class="mb-4 fs-2">13160 CHATEAURENARD</h5>
                     </div>
                 </div>
             </div>
@@ -243,8 +243,8 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" name="childAge" placeholder="Age de l'enfant" pattern="[0-9]{2}">
-                                                <label for="cage">Age de l'enfant</label>
+                                                <input type="text" class="form-control border-0" name="childAge" placeholder="Date de naissance de l'enfant" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}">
+                                                <label for="cage">Date de naissance de l'enfant</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -278,7 +278,7 @@
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Me contacter</h3>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Villa medica<br/>16 boulevard Gambetta<br/>13160 Chateaurenard </p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>06 01 02 03 04</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>07 65 74 20 78</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>contact@psychomotrice-villamedica.fr</p>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -303,7 +303,6 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./js/contact.js"></script>
     <script src="js/main.js"></script>
 
