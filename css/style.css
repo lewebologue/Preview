@@ -517,4 +517,7 @@ h6,
         padding: 0!important;
         
     }
+    #map{
+        padding-bottom:unset!important;
+    }
 }
