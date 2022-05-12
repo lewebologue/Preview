@@ -87,7 +87,7 @@
     width: 50%;
     padding: 20px;
     display: inline-block;
-    float: right;
+    /*float: right;*/
 }
 
 .main-timeline .title {
@@ -297,5 +297,15 @@
 
     .main-timeline .timeline:nth-child(even) .timeline-year {
         right: 9%;
+    }
+    .timeline-year{
+        font-size: 1em!important;
+    }
+    .timeline-icon{
+        margin-left: 1.3rem;
+    }
+    .liberal{
+        margin-left: 5rem!important;
+        text-align: end;
     }
 }
