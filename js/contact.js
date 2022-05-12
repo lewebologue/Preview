@@ -1,8 +1,8 @@
 //Initialising email API
-function init(){
-    emailjs.init('TwLYgRBPXw8xH5uel')
-};
-init();
+//function init(){
+//    emailjs.init('TwLYgRBPXw8xH5uel')
+//};
+//init();
 
 //Sending email
 function sendEmail(){
@@ -13,6 +13,7 @@ function sendEmail(){
                 console.log('SUCCESS!');
                 alert("Message envoyé !");
                 window.location.reload();
+                document.getElementById('contact-form').reset();
             }, function(error) {
                 console.log('FAILED...', error);
                 alert("Erreur lors de l'envoi du message !");
