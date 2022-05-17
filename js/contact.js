@@ -1,9 +1,3 @@
-//Initialising email API
-//function init(){
-//    emailjs.init('TwLYgRBPXw8xH5uel')
-//};
-//init();
-
 //Sending email
 function sendEmail(){
     document.getElementById('contact-form').addEventListener('submit', function(event) {
